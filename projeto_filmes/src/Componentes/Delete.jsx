@@ -69,7 +69,7 @@ export default function Delete() {
           <div className="movie-meta">
             <span>ID: {data.id}</span>
             <span>Gênero: {data.gender}</span>
-            <span>Ano: {data.year}</span>
+            <span>Ano: {data.year.split("T")[0]}</span>
 
           </div>
         <div className='movie-actions'>
@@ -77,7 +77,13 @@ export default function Delete() {
         </div>
         </div>
       
-       : (id) ? <p>Filme não encontrado</p> 
+       : (id) ? <div className="movie-info">
+          <div className="movie-meta">
+          
+            <span>Filme não encontrado :(</span>
+
+          </div>
+        </div>  
       : ''}
       </div>
       </div>

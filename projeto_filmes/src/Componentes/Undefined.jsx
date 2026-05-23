@@ -9,7 +9,7 @@ export default function Undefined() {
       <p>
         Ops! O filme ou a página que você procura não existe no nosso catálogo.
       </p>
-      <Link to="/" className="btn btn-primary">Voltar para o Início</Link>
+      <button className="btn btn-primary"><Link to="/">Voltar para o Início</Link></button>
     </div>
   );
 }

@@ -16,7 +16,7 @@ const CaixaPesquisaId = ({value, onSearch,onChange}) => {
           }}
         />
         <button className="btn btn-primary" onClick={onSearch}>Procurar</button>
-        <button> <Link to='/' className="btn btn-delete" >Cancelar</Link></button>
+        <button className="btn btn-delete"> <Link to='/'  >Cancelar</Link></button>
       </div>
     )
 

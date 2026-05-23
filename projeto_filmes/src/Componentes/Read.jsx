@@ -61,7 +61,7 @@ export default function Read() {
           <div className="movie-meta">
             <span>ID: {data.id}</span>
             <span>Gênero: {data.gender}</span>
-            <span>Ano: {data.year}</span>
+            <span>Ano: {data.year.split("T")[0]}</span>
 
           </div>
         </div>

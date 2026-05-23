@@ -43,7 +43,7 @@ export default function Home() {
 
             <div className="movie-meta">
               <span>Gênero: {movie.gender}</span>
-              <span>Ano: {movie.year}</span>
+              <span>Ano: {movie.year.split("T")[0]}</span>
             </div>
 
             <div className="movie-actions">

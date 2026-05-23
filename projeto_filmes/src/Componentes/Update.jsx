@@ -55,7 +55,7 @@ export default function Update() {
 
   return (
 
-    <div>
+    <div className='main-content'>
       <h1>Alterar</h1>
       <div>
         <CaixaPesquisaId
@@ -65,11 +65,11 @@ export default function Update() {
         />
       </div>
       
-      <div className='main-content'>
+      <div>
         {(loading) ? <p>Carregando...</p> : '' }
         { (values && values.name) ? <div className='form-container'> 
           <form onSubmit={handleUpdate}>
-          <div>
+          <div >
             <label htmlFor="name">Nome do Filme:</label>
           <input type="text" name='name' placeholder='Digite o nome do filme'
           value={values.name}
@@ -95,7 +95,16 @@ export default function Update() {
 
           </div>
           <button className='btn btn-primary'>Alterar</button>
-        </form> </div> : (!values) ? <p>Filme não encontrado</p> : '' }
+        </form> </div> : (!values) ? 
+        <div className='movie-card'>
+        <div className="movie-info">
+          <div className="movie-meta">
+          
+            <span>Filme não encontrado :(</span>
+
+          </div>
+        </div>
+        </div>  : '' }
         
 
 
